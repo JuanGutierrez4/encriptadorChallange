@@ -1,0 +1,98 @@
+header{
+
+    background: url('logo.jpg');
+    background-size:152px;
+    background-attachment: fixed;
+    padding: 60px;
+    text-align: center;
+}
+
+h1{
+    
+    color: #b9da27;
+    font-size: 50px;
+
+
+}
+
+.Opciones, legend{
+    text-align: center;
+    margin: 20px 0 ;
+    font-size: 30px;
+    background-color: #6799d5;
+    
+    
+}
+
+.cripto{
+    transform: scale(1.5);
+    margin: 30px 10px;
+   
+}
+
+
+.funciones{
+    width: 1000px;
+    margin: 0 auto;
+    /*margenes*/
+    padding: 50px;
+
+}
+
+.funciones li{
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    vertical-align: top;
+    margin: 0 2%;
+    padding: 30px 20px ;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+
+.funciones li:hover{
+    border-color:#c78c19;
+}
+
+.funciones li:hover h2{
+    font-size: 40px;
+}
+
+
+#Texto1,#Texto2{
+    background: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+    padding-top:20px ;
+}
+
+#numero1,#numero2 {
+    width: 200px; /* Ancho de 200 pixels */
+    height: 40px; /* Alto de 40 pixels */
+    font-size: 25px; /* Tamaño de fuente de 16 pixels */
+    padding: 5px; /* Espaciado interno de 5 pixels */
+    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+}
+
+.enviar{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    padding: 15px 0;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(25, 6, 239);
+    transform: scale(1.2);
+    color: white;
+    font-size: 30px;
+}
