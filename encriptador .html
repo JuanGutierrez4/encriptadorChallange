@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+
+
+<html lang="es">
+    <head>
+        <!-- HACE QUE EL NAVEGADOR PERMITA VER LOS DISTITOS LENGUAJES, ES UN DICCIONARIO DE PALABRAS -->
+        <meta charset="UTF-8">
+        <!-- que adapte para telefonos -->
+        <meta name="viewport" content="width=divice-width">
+        
+        <title>Encriptador</title> 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styleEncriptados.css">
+        <script src="appEncriptador.js"></script>
+        
+    </head>
+
+
+    <body>
+        <header>
+            <h1>
+                Encriptador
+            </h1>
+        </header>
+
+        <main>
+
+
+            <fieldset class="Opciones">
+                
+                <legend>¿Qué acción desea hacer?</legend>
+
+
+                <!-- el for te direcciona al nombre establecido -->
+                <!-- name es para que solo puedas seleccionar uno de la familia -->
+                <!-- si podemos el input despues del label, el radio estara despues del nombre que asignamos en el label-->
+                <label for="Encriptar">
+                <input type="radio" name="tipo" value="Encriptar" class="cripto" checked>
+                Encriptar</label>
+
+
+                <label for="Desencriptar">
+                <input type="radio" name="tipo"  value="Desencriptar" class="cripto">
+                Desencriptar</label>
+
+                <legend>Ingrese dos números </legend>
+                <label for="numero">Ingresa un número coprimo de 27: </label>
+                <input type="number" id="numero1"  min="1" required>
+                <label for="numero">Ingresa un número: </label>
+                <input type="number" id="numero2"  min="0" required>
+
+                <h3></h3>
+
+            </fieldset>
+
+            
+
+            <ul class="funciones">
+                <li>
+                    <h2 class="primer_cuadro">Texto a ...  </h2>
+                    <textarea id="Texto1" cols="30" rows="10" class="entradaSalida" required placeholder="Ingrese el texto" ></textarea >
+    
+                </li>
+    
+                <li>
+                    <h2 class="segundo_cuadro">Texto des(encriptado)  </h2>
+                    <textarea  id="Texto2" cols="30" rows="10" class="entradaSalida" disabled ></textarea >
+                </li>
+            </ul>
+
+            
+            <button onclick="transformar();" class="enviar">Enviar</button>
+
+        </main>
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+</html>
